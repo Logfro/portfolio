@@ -43,6 +43,14 @@ export default {
   font-family: 'Biotif-Bold';
   src: url('./assets/fonts/Biotif-Bold.ttf');
 }
+@font-face {
+  font-family: 'Biotif-MediumItalic';
+  src: url('./assets/fonts/Biotif-MediumItalic.ttf');
+}
+@font-face {
+  font-family: 'SourceCodePro-SemiBold';
+  src: url('./assets/fonts/SourceCodePro-SemiBold.ttf');
+}
 /* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -83,7 +91,33 @@ h1 u {
   height: 5px;
   box-shadow: 0 92px 0 0 #FF3D4C;
   display: block;
-  width: 820px;
+  width: 815px;
   margin-bottom: 8rem;
 }
+h2 {
+  font-family: "Biotif-Bold";
+  font-size: 5rem;
+
+}
+h4  {
+  font-family: "Biotif-SemiBold";
+  background: transparent;
+  font-size: 2.3rem;
+  font-weight: normal;
+}
+
+sub {
+  font-family: "SourceCodePro-SemiBold";
+  background: transparent;
+  font-size: 1.4rem;
+  color: #BFC0C1;
+}
+
+    h2 mark {
+        color: #FF3D4C;
+    }
+  h2::after {
+    content: " >";
+    color: #FF3D4C;
+  }
 </style>

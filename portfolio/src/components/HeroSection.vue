@@ -6,7 +6,10 @@
             <u>UX/UI-Designer</u>
             
         </h1>
-        <p>My name is Farid Goldmann and I’m a passionate designer based in Vienna, Austria.</p>
+        <p>My name is Farid Goldmann and I’m a passionate designer based in Vienna, Austria.
+            <br>
+            I bring a burning passion and profound empathy to the conversation.
+        </p>
         <a href=""><Button cap="View my work"/></a>
         <ul class="social-icons">
             <li><a href=""><img src="../assets/social-icons/linked_in.svg" alt="LinkedIn Logo"></a></li>
@@ -32,6 +35,7 @@ export default ({
         font-family: "Biotif-Book";
         font-size: 1.6rem;
         margin-bottom: 18px;
+        line-height: 1.5;
     }
 
     .hero   {
