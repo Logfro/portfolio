@@ -92,7 +92,7 @@ h1 u {
   box-shadow: 0 92px 0 0 #FF3D4C;
   display: block;
   width: 815px;
-  margin-bottom: 8rem;
+  margin-bottom: 135px;
 }
 h2 {
   font-family: "Biotif-Bold";

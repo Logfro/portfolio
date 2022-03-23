@@ -34,7 +34,7 @@ export default ({
     p   {
         font-family: "Biotif-Book";
         font-size: 1.6rem;
-        margin-bottom: 18px;
+        margin-bottom: 24px;
         line-height: 1.5;
     }
 

@@ -6,6 +6,7 @@
         </div>
         <WorkSection class="work-section"/>
         <AboutMeSection/>
+        <ContactSection/>
 
     </main>
 </template>
@@ -15,6 +16,7 @@ import HeroSection from './HeroSection.vue'
 import CompanyBar from './CompanyBar.vue'
 import WorkSection from './WorkSection.vue'
 import AboutMeSection from './AboutMeSection.vue'
+import ContactSection from './ContactSection.vue'
 
 export default  ({
     setup() {
@@ -25,7 +27,8 @@ export default  ({
         HeroSection,
         CompanyBar,
         WorkSection,
-        AboutMeSection
+        AboutMeSection,
+        ContactSection
     }
 })
 </script>
