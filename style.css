@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap');
+
+html    {
+    background-color: black;
+    color: white;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 20px;
+
+
+}
+body    {
+    margin: 0;
+}
+pre {
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: bold;
+    margin: auto; 
+    width: fit-content;
+    font-size: 1vw;
+}
+.con    {
+    margin: 0px 100px   ;
+    display: flex;
+    flex-direction: column;
+}
+.nav    {
+    text-align: center;
+    margin: 50px 0;
+}
