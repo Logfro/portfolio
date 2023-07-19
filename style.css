@@ -14,9 +14,21 @@ body    {
 pre {
     font-family: 'Anonymous Pro', monospace;
     font-weight: bold;
-    margin: auto; 
     width: fit-content;
     font-size: 1vw;
+    margin: auto;
+}
+a   {
+    color: white;
+}
+img {
+    width: 100%;
+}
+a p {
+    text-decoration: none;
+}
+p   {
+    margin: 0;
 }
 .con    {
     margin: 0px 100px   ;
@@ -26,4 +38,30 @@ pre {
 .nav    {
     text-align: center;
     margin: 50px 0;
+}
+.headline   {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+.h2 {
+    font-size: 0.84vw;
+    margin: auto 1.25vw;
+}
+.p-info {
+    width: 30%;
+    display: flex;
+    margin: auto;
+    margin-top: 24px;
+}
+.p-info-link    {
+    margin-left: auto;
+    display: inline-flex;
+}
+.p-info-link a  {
+    margin-left: 24px;
+}
+.project    {
+    margin-bottom: 128px;
 }
