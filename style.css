@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap');
-
+/*
+font-size: calc(2px + 0.8vw); !!!!!
+**/
+/* font-size: clamp(8px, 2px + 1vw, 18px); */
+/* font-size: clamp(2px, 2px + 1vw, 18px); */
+/* og     font-size: 1vw; */
 html    {
     background-color: black;
     color: white;
     font-family: 'Anonymous Pro', monospace;
-    font-size: 20px;
+    font-size: clamp(16px, 15px + 0.390625vw, 24px);
 
 
 }
@@ -15,29 +20,32 @@ pre {
     font-family: 'Anonymous Pro', monospace;
     font-weight: bold;
     width: fit-content;
-    font-size: 1vw;
+    font-size: clamp(2px, 2px + 1vw, 18px);
     margin: auto;
 }
 a   {
     color: white;
 }
 img {
-    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: block;
 }
 a p {
     text-decoration: none;
 }
 p   {
     margin: 0;
+    line-height: 130%;
 }
 .con    {
-    margin: 0px 100px   ;
+    margin: 0 clamp(1rem ,8px + 1.5625vw, 6.25rem);
     display: flex;
     flex-direction: column;
 }
 .nav    {
     text-align: center;
-    margin: 50px 0;
+    margin: 3.125rem 0;
 }
 .headline   {
     display: flex;
@@ -46,11 +54,11 @@ p   {
     justify-content: center;
 }
 .h2 {
-    font-size: 0.84vw;
+    font-size: clamp(2px, 2px + 0.85vw, 15px);
     margin: auto 1.25vw;
 }
 .p-info {
-    width: 30%;
+    max-width: 25rem;
     display: flex;
     margin: auto;
     margin-top: 24px;
@@ -65,3 +73,86 @@ p   {
 .project    {
     margin-bottom: 128px;
 }
+
+/* .info   {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 48rem;
+    margin-bottom: 3rem;
+}
+.c1 {
+    grid-column: 1 / 2;
+}
+.c2 {
+    grid-column: 2 / 4;
+} */
+.info   {
+    display: flex;
+    max-width: 48rem;
+    margin: 0 auto 1rem auto;
+}
+.c1 {
+    min-width: 30%;
+
+}
+.c2 {
+    max-width: 56ch;
+}
+
+
+.desc   {
+    width: 100%;
+    max-width: 65ch;
+    margin: 4rem auto 5rem auto;
+}
+
+/* .about-info {
+    display: flex;
+    max-width: 65ch;
+    margin-bottom: 1rem;
+}
+.ai-headline    {
+    width: 45%;
+} */
+.about-p    {
+    max-width: 65ch;
+    margin: 0 auto 3rem auto;
+}
+.ai-flex    {
+    margin-bottom: 3rem;
+}
+
+.ai-wrapper {
+    max-width: 65ch;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    width: 100%;
+}
+.ai-headline    {
+    min-width: 45%;
+}
+.about-info {
+    min-width: 55%;
+}
+@media screen and (max-width:768px) {
+    .info   {
+        display: block;
+        max-width: 65ch;
+    }
+    .c1{
+        margin-bottom: 0.5rem;
+    }
+    .c2 {
+        max-width: 65ch;
+    }
+    .ai-wrapper {
+        display: block;
+    }
+    .ai-headline    {
+        margin-bottom: 0.5rem;
+    }
+    .about-info {
+        max-width: 65ch;
+    }
+}
+
