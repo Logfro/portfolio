@@ -36,8 +36,11 @@ b   {
 }
 img {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 1.5rem auto 0.75rem;
     display: block;
+    width: 100%;
+    object-fit: contain;
+    max-height: 70vh;
 }
 a p {
     text-decoration: none;
@@ -45,6 +48,41 @@ a p {
 p   {
     margin: 0;
     line-height: 130%;
+}
+h1 {
+    max-width: 1440px;
+}
+h2  {
+    color: #FCFCFC;
+    margin: 2rem auto 1rem auto;
+    max-width: 40rem;
+    width: 100%;
+}
+h3  {
+    color: #FCFCFC;
+    margin: 1.5rem auto 0.75rem auto;
+    max-width: 40rem;
+    width: 100%;
+}
+ol  {
+    line-height: 130%;
+    max-width: 40rem;
+    margin: 0 auto 1rem;
+    list-style-position: outside;
+    padding-left: 4rem;
+}
+ul  {
+    line-height: 130%;
+    max-width: 38rem;
+    margin: 0 auto 1rem;
+    padding-left: 0;
+    width: 100%;
+}
+li  {
+    margin-bottom: 0.3rem;
+}
+p.text   {
+    margin-top: 1.5rem;
 }
 .con    {
     margin: 0 clamp(1rem ,8px + 1.5625vw, 6.25rem);
@@ -96,7 +134,7 @@ p   {
 } */
 .info   {
     display: flex;
-    max-width: 48rem;
+    max-width: 40rem;
     margin: 0 auto 1rem auto;
 }
 .c1 {
@@ -110,8 +148,8 @@ p   {
 
 .desc   {
     width: 100%;
-    max-width: 65ch;
-    margin: 4rem auto 5rem auto;
+    max-width: 40rem;
+    margin: 0rem auto 1rem auto;
 }
 
 /* .about-info {
@@ -123,7 +161,7 @@ p   {
     width: 45%;
 } */
 .about-p    {
-    max-width: 65ch;
+    max-width: 40rem;
     margin: 0 auto 3rem auto;
 }
 .ai-flex    {
@@ -131,7 +169,7 @@ p   {
 }
 
 .ai-wrapper {
-    max-width: 65ch;
+    max-width: 40rem;
     margin: 0 auto 1rem auto;
     display: flex;
     width: 100%;
@@ -143,15 +181,18 @@ p   {
     min-width: 55%;
 }
 @media screen and (max-width:768px) {
+    ol  {
+        padding-left: 2rem;
+    }
     .info   {
         display: block;
-        max-width: 65ch;
+        max-width: 40rem;
     }
     .c1{
         margin-bottom: 0.5rem;
     }
     .c2 {
-        max-width: 65ch;
+        max-width: 40rem;
     }
     .ai-wrapper {
         display: block;
