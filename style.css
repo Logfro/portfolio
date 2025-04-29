@@ -108,16 +108,27 @@ p.text   {
     display: flex;
     margin: auto;
     margin-top: 24px;
+    justify-content: center ;
 }
 .p-info-link    {
     margin-left: auto;
     display: inline-flex;
+    min-width: max-content;
+    margin: auto 0 auto 1.5rem;
 }
 .p-info-link a  {
     margin-left: 24px;
 }
 .project    {
-    margin-bottom: 128px;
+    margin-bottom: 2rem;
+}
+a.project-thumb  {
+    margin: 1.5rem auto 0.75rem;
+    display: block;
+    max-width: 1440px;
+}
+a.project-link  {
+
 }
 
 /* .info   {

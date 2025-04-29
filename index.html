@@ -10,7 +10,7 @@
 <body>
     <div class="con" style="height: 100vh">
         <div class="headline">
-            <pre>
+            <pre id="ascii1">
   /$$$$$$                    /$$       /$$
  /$$__  $$                  |__/      | $$
 | $$  \__//$$$$$$   /$$$$$$  /$$  /$$$$$$$
@@ -22,7 +22,7 @@
                                           
                                           
     </pre>
-              <pre>
+              <pre id="ascii2">
                      /$$       /$$
                     | $$      | $$
   /$$$$$$   /$$$$$$ | $$  /$$$$$$$ /$$$$$$/$$$$   /$$$$$$  /$$$$$$$  /$$$$$$$
@@ -39,6 +39,39 @@
 
         <p class="nav">Please press F2 for <a href="work.html"><b>WORK</b></a> and Del for <a href="about.html"><b>ABOUT</b></a></p>
     </div>
-
+    <script>
+        // Shared glitch logic for both blocks
+        const blocks = [
+          { el: document.getElementById('ascii1'), text: document.getElementById('ascii1').textContent },
+          { el: document.getElementById('ascii2'), text: document.getElementById('ascii2').textContent }
+        ];
+        const glitchChars = "!@#$%^&*()_+-=[]{}|;:',.<>/?~`";
+    
+        function makeGlitch(text) {
+          return text.split('').map(c => {
+            if (c === '\n' || Math.random() > .07) return c;
+            return glitchChars[Math.floor(Math.random() * glitchChars.length)];
+          }).join('');
+        }
+    
+        function glitchBlock(block) {
+          const { el, text } = block;
+          const duration = Math.random() * 300 + 200;
+          const iv = setInterval(() => {
+            el.textContent = makeGlitch(text);
+          }, 50);
+          setTimeout(() => {
+            clearInterval(iv);
+            el.textContent = text;
+          }, duration);
+        }
+    
+        function startGlitching() {
+          blocks.forEach(b => glitchBlock(b));
+          setTimeout(startGlitching, Math.random() * 1500 + 500);
+        }
+    
+        startGlitching();
+      </script>
 </body>
 </html>
